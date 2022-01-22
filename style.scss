@@ -53,11 +53,11 @@ html {
 body {
     background: $bg-color;
 }
-section{
+section {
     padding: 3rem 1rem;
 }
 
-.link-btn{
+.link-btn {
     margin-top: 1rem;
     display: inline-block;
     padding: 1rem 3rem;
@@ -67,7 +67,7 @@ section{
     border-radius: 8px;
     font-size: 1.8rem;
 
-    &:hover{
+    &:hover {
         background: $white;
         color: $orange;
     }
@@ -120,22 +120,61 @@ section{
     }
 }
 
-.home{
+.home {
     background: url(images/home-bg.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    
 
-    span{
+    span {
         font-size: 2.5rem;
         color: $orange;
     }
-    h3{
+    h3 {
         @include title-text(5rem);
         padding-top: 1rem;
     }
 }
+
+.about {
+    span {
+        font-size: 2.5rem;
+        color: $orange;
+    }
+    h3 {
+        @include title-text(2.7rem);
+        padding: 1rem 0;
+    }
+    p {
+        @include graph-text(1.5rem);
+       
+    }
+    ul {
+        list-style: none;
+
+        li {
+            padding-top: 1.5rem;
+            @include title-text(1.7rem);
+
+            i {
+                padding-right: 1rem;
+                color: $orange;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -173,8 +212,8 @@ section{
     html {
         font-size: 55%;
     }
-    .home h3{
-        font-size: 3rem ;
+    .home h3 {
+        font-size: 3rem;
     }
 }
 
@@ -220,4 +259,3 @@ section{
         font-size: 50%;
     }
 }
-
