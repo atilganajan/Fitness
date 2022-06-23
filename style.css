@@ -125,6 +125,10 @@ section {
   background-attachment: fixed;
 }
 
+.home i {
+  padding: 5px;
+}
+
 .home span {
   font-size: 2.5rem;
   color: #ff5421;
